@@ -107,8 +107,7 @@ ground truth boxes. To get the validation results in the paper we use `run_infer
 ### Run Inference
 To start inference, run the following:
 ```
-python src/monopsr/experiments/run_inference.py --config_path='src/monopsr/configs/monopsr_model_000
-.yaml' --default_ckpt_num='100000' --data_split='val'
+python src/monopsr/experiments/run_inference.py --checkpoint_name='monopsr_model_000' --ckpt_num='100000' --data_split='val'
 ```
 To calculate AP performance, follow the instructions in `scripts/offline_eval/kitti_native_eval`
 
